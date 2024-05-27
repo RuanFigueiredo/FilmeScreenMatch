@@ -1,3 +1,5 @@
+package br.com.exercicios;
+
 public class ContaBancaria {
     private int numConta;
     private double saldo;

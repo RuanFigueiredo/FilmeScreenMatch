@@ -1,3 +1,5 @@
+package br.com.exercicios;
+
 public class Produto {
     private String nome;
     private double preco;

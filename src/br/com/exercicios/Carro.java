@@ -1,3 +1,5 @@
+package br.com.exercicios;
+
 public class Carro {
     String modelo;
     int ano;

@@ -1,3 +1,5 @@
+package br.com.exercicios;
+
 public class AlunoObject {
     public static void main(String[] args) {
         Aluno alunoUm = new Aluno();

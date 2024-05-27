@@ -1,3 +1,5 @@
+package br.com.exercicios;
+
 public class IdadePessoa {
     private String nome;
     private int idade;
@@ -20,9 +22,9 @@ public class IdadePessoa {
 
     public void verificarIdade(){
         if(idade >=18){
-            System.out.println("Pessoa maior de idade");
+            System.out.println("br.com.exercicios.Pessoa maior de idade");
         } else{
-            System.out.println("Pessoa menor de idade");
+            System.out.println("br.com.exercicios.Pessoa menor de idade");
         }
     }
 }

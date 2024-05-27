@@ -1,3 +1,5 @@
+package br.com.exercicios;
+
 public class Musica {
     String titulo;
     String artista;
