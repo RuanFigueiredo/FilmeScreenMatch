@@ -1,3 +1,4 @@
+import br.com.alura.screematch.calculadora.CalculadoraDeTempo;
 import br.com.alura.screematch.modelos.Filme;
 import br.com.alura.screematch.modelos.Serie;
 
@@ -28,8 +29,18 @@ public class Principal {
 
         System.out.println("Duração em minutos para maratonar lost: " +lost.getDuracaoEmMinutos() + " minutos");
 
+        Filme outroFilme = new Filme();
+        outroFilme.setNome( "Homem de Aço");
+        outroFilme.setAnoDeLancamento(2014);
+        outroFilme.setDuracaoEmMinutos(125);
+        System.out.println("A duração desse segundo filme é : " + outroFilme.getDuracaoEmMinutos());
+        outroFilme.exibeFichaTecnica();
 
-
+        CalculadoraDeTempo calculadora = new CalculadoraDeTempo();
+        calculadora.inclui(meuFilme);
+        calculadora.inclui(outroFilme);
+        calculadora.inclui(lost);
+        System.out.println("Duração total do filme é..." + calculadora.getTempoTotal() + " minutos! ");
 
     }
 }
