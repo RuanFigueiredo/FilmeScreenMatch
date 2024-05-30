@@ -1,4 +1,6 @@
 import br.com.alura.screematch.calculadora.CalculadoraDeTempo;
+import br.com.alura.screematch.calculadora.FiltroRecomendacao;
+import br.com.alura.screematch.modelos.Episodio;
 import br.com.alura.screematch.modelos.Filme;
 import br.com.alura.screematch.modelos.Serie;
 
@@ -42,5 +44,15 @@ public class Principal {
         calculadora.inclui(lost);
         System.out.println("Duração total do filme é..." + calculadora.getTempoTotal() + " minutos! ");
 
+
+        FiltroRecomendacao filtro = new FiltroRecomendacao();
+        filtro.filtra(meuFilme);
+
+        Episodio episodio = new Episodio();
+        episodio.setNumero(1);
+        episodio.setSerie(lost);
+        episodio.setTotalVisualisacoes(350);
+
+        filtro.filtra(episodio);
     }
 }

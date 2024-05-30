@@ -1,4 +1,4 @@
-package br.com.exercicios;
+package br.com.exercicios.basicospoo;
 
 public class Aluno {
     String nome;

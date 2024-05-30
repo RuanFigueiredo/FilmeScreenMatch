@@ -1,4 +1,4 @@
-package br.com.exercicios;
+package br.com.exercicios.polimorfismo;
 
 public class Animal {
     public void emitirSom(){

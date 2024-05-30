@@ -1,4 +1,4 @@
-package br.com.exercicios;
+package br.com.exercicios.polimorfismo;
 
 public class Gato extends Animal {
     @Override

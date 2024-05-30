@@ -1,4 +1,4 @@
-package br.com.exercicios;
+package br.com.exercicios.basicospoo;
 
 public class IdadePessoa {
     private String nome;
@@ -22,9 +22,9 @@ public class IdadePessoa {
 
     public void verificarIdade(){
         if(idade >=18){
-            System.out.println("br.com.exercicios.Pessoa maior de idade");
+            System.out.println("br.com.exercicios.basicospoo.Pessoa maior de idade");
         } else{
-            System.out.println("br.com.exercicios.Pessoa menor de idade");
+            System.out.println("br.com.exercicios.basicospoo.Pessoa menor de idade");
         }
     }
 }

@@ -1,4 +1,4 @@
-package br.com.exercicios;
+package br.com.exercicios.polimorfismo;
 
 public class ContaCorrente extends ContaDeBanco{
     void tarifaMensal(){
