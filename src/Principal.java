@@ -4,6 +4,8 @@ import br.com.alura.screematch.modelos.Episodio;
 import br.com.alura.screematch.modelos.Filme;
 import br.com.alura.screematch.modelos.Serie;
 
+import java.util.ArrayList;
+
 public class Principal {
     public static void main(String[] args) {
         Filme meuFilme = new Filme();
@@ -54,5 +56,20 @@ public class Principal {
         episodio.setTotalVisualisacoes(350);
 
         filtro.filtra(episodio);
+
+        Filme filmeDoRuan = new Filme();
+        filmeDoRuan.setDuracaoEmMinutos(120);
+        filmeDoRuan.setNome("Batman, o cavaleiro das trevas");
+        filmeDoRuan.setAnoDeLancamento(2008);
+        filmeDoRuan.avalia(9);
+
+        ArrayList<Filme> listaDeFilmes = new ArrayList<>();
+        listaDeFilmes.add(filmeDoRuan);
+        listaDeFilmes.add(meuFilme);
+        listaDeFilmes.add(outroFilme);
+        System.out.println("Tamanho da lista: " + listaDeFilmes.size());
+        System.out.println("primeiro filme: " + listaDeFilmes.get(0).getNome());
+
+        System.out.println(listaDeFilmes.get);
     }
 }
