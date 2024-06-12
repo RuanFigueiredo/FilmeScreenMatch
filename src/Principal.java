@@ -8,10 +8,7 @@ import java.util.ArrayList;
 
 public class Principal {
     public static void main(String[] args) {
-        Filme meuFilme = new Filme();
-
-        meuFilme.setNome( "Vingadores - Era de Ultron");
-        meuFilme.setAnoDeLancamento(2015);
+        Filme meuFilme = new Filme("Vingadores, era de Ultron",2015);
         meuFilme.setDuracaoEmMinutos(120);
         System.out.println("duração do filme: " + meuFilme.getDuracaoEmMinutos());
 
@@ -22,10 +19,7 @@ public class Principal {
         System.out.println(meuFilme.getTotalDeAvaliacoes());
         System.out.println(meuFilme.pegaMedia());
 
-        Serie lost = new Serie();
-
-        lost.setNome("Lost");
-        lost.setAnoDeLancamento(2000);
+        Serie lost = new Serie("Lost", 2000);
         lost.exibeFichaTecnica();
         lost.setTemporadas(12);
         lost.setEpisodioPorTemporada(15);
@@ -33,9 +27,7 @@ public class Principal {
 
         System.out.println("Duração em minutos para maratonar lost: " +lost.getDuracaoEmMinutos() + " minutos");
 
-        Filme outroFilme = new Filme();
-        outroFilme.setNome( "Homem de Aço");
-        outroFilme.setAnoDeLancamento(2014);
+        Filme outroFilme = new Filme("Homem de Aço",2014);
         outroFilme.setDuracaoEmMinutos(125);
         System.out.println("A duração desse segundo filme é : " + outroFilme.getDuracaoEmMinutos());
         outroFilme.exibeFichaTecnica();
@@ -57,10 +49,8 @@ public class Principal {
 
         filtro.filtra(episodio);
 
-        Filme filmeDoRuan = new Filme();
+        Filme filmeDoRuan = new Filme("Batman, O cavaleiro das trevas", 2008);
         filmeDoRuan.setDuracaoEmMinutos(120);
-        filmeDoRuan.setNome("Batman, o cavaleiro das trevas");
-        filmeDoRuan.setAnoDeLancamento(2008);
         filmeDoRuan.avalia(9);
 
         ArrayList<Filme> listaDeFilmes = new ArrayList<>();
