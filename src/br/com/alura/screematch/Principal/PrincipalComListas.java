@@ -4,7 +4,10 @@ import br.com.alura.screematch.modelos.Filme;
 import br.com.alura.screematch.modelos.Serie;
 import br.com.alura.screematch.modelos.Titulo;
 
+import java.sql.SQLOutput;
+import java.text.CollationElementIterator;
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class PrincipalComListas {
     public static void main(String[] args) {
@@ -24,9 +27,30 @@ public class PrincipalComListas {
 
         for(Titulo item: lista){
             System.out.println(item.getNome());
-            Filme filme = (Filme) item;
-            System.out.println("classificação: " + filme.getClassificacao());
+           if (item instanceof Filme filme){
+               System.out.println("Classificação" + filme.getClassificacao());
+           }
+
         }
+
+        ArrayList<String> buscaPorArtista = new ArrayList<>();
+        buscaPorArtista.add("Adam Sandler");
+        buscaPorArtista.add("Jonh Travolta");
+        buscaPorArtista.add("Scarlett Johansson");
+        buscaPorArtista.add("Zac Efrom");
+        buscaPorArtista.add("Grazi Massafera");
+        System.out.println(buscaPorArtista);
+
+        Collections.sort(buscaPorArtista);
+        System.out.println("Depois da ordenação: " + buscaPorArtista);
+
+        System.out.println("lista de titulos ordenados");
+        Collections.sort(lista);
+        System.out.println(lista);
+
+
+
+
 
     }
 }
